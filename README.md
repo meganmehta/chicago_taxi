@@ -10,7 +10,7 @@ To run this project locally, make sure to clone this repo on your computer in wh
 
 ```
 cd 
-git clone https://github.com/meganmehta/chicago-cta.git
+git clone https://github.com/meganmehta/chicago-taxi.git
 ```
 Along with cloning this repo, make sure to download [R](https://www.r-project.org/ ) (v 4.1.2) and [R Studio](https://www.rstudio.com/products/rstudio/download/ )(v 2021.09).
 
