@@ -11,15 +11,15 @@ library(rio)
 library(data.table)
 
 # initial data trim! 
-#allData <- as.data.frame(fread("Taxi_Trips_-_2019.tsv"))
-#selected_variables <- c("Trip Start Timestamp", "Trip Seconds", "Trip Miles", "Pickup Community Area", "Dropoff Community Area", "Company")
-#selected_taxi_data <- allData[selected_variables]
-#write.csv(selected_taxi_data, "trimmed_taxi_data.csv")
+allData <- as.data.frame(fread("Taxi_Trips_-_2019.tsv"))
+selected_variables <- c("Trip Start Timestamp", "Trip Seconds", "Trip Miles", "Pickup Community Area", "Dropoff Community Area", "Company")
+selected_taxi_data <- allData[selected_variables]
+write.csv(selected_taxi_data, "trimmed_taxi_data.csv")
 
 #import trimmed data + additional data filtering 
 # remove all trips less than 0.5 miles, and more than 100 miles, and less than 60 seconds, and greater than 5 hours
 # and all trips that either start or end outside of a Chicago community area. s
-'''trimmedData <- read.csv("trimmed_taxi_data.csv")
+trimmedData <- read.csv("trimmed_taxi_data.csv")
 temp <- subset(trimmedData, Trip.Miles > 0.5) #keep trips more than 0.5 miles 
 temp <- subset(temp, Trip.Miles < 100) #keep trips less than 100 miles 
 temp <- subset(temp, Trip.Seconds > 60) #keep trips more than 60 seconds 
@@ -28,7 +28,7 @@ temp <- subset(temp, Trip.Seconds < 18000) #keep trips less than 5 hours
 temp <- na.omit(temp) #community areas can be blank or NA if its not Chicago
 temp <- subset(temp, Pickup.Community.Area < 77) #filter out communities 
 temp <- subset(temp, Dropoff.Community.Area < 77)
-write.csv(temp, "trimmed_taxi_data_2.csv") '''
+write.csv(temp, "trimmed_taxi_data_2.csv") 
 
 #you should make the cab company names more readable (e.g. remove the s for those that have it) 
 #and very likely you should convert the taxi company names into some kind of short code 
