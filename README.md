@@ -4,7 +4,7 @@ This code repository contains an app.R file along with the data_filtering.R file
 visualization. The data_filtering.R file contains the code needed to create the files referenced in the data files folder. The 
 app.R file contains all of the code needed to run this project. All the data from the .csv files comes from the [Taxi Trips - 2019](https://data.cityofchicago.org/Transportation/Taxi-Trips-2019/h4cq-z3dy) dataset. 
 Another .geojson file was also referenced in the app.R and data_filtering.R file which can be found here: [Boundaries - Community Areas (current)](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6) dataset. 
-This data is available from the [Chicago Data Portal](https://data.cityofchicago.org/). 
+This data is available from the [Chicago Data Portal](https://data.cityofchicago.org/). **Make sure to add the boundaries file to your directory! (the file was too big to be added to this repo, needs to be downloaded externally)**
 
 To run this project locally, make sure to clone this repo on your computer in whatever location you choose. Here are some simple steps below: 
 
