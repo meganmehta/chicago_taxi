@@ -18,7 +18,7 @@ Once you have R and R Studio downloaded, open this project file in R Studio. You
 ![Session -> Set Working Directory -> Choose Directory](https://github.com/meganmehta/cta_rides/blob/main/documentation1.jpg)
 
 After the working directory is set, open the data_filtering.R file within R Studio. **This file needs to be run first to ensure that all of the data files 
-are present so that the app.R file can run properly. 
+are present so that the app.R file can run properly.**
 
 Before running this application, make sure that all necessary packages/libraries are downloaded. To check what libraries are currently added, type the command
 `installed.packages()` in the R Studio Console. If some packages are missing, use `install.packages("package-name-here")` to install the remaining ones necessary. 
